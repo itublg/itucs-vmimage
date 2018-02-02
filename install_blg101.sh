@@ -16,9 +16,9 @@ $CHECK /usr/bin/display || $INSTALL xfonts-75dpi imagemagick
 
 if ! $CHECK /usr/bin/wxmedit; then
 	cd /dev/shm
-	wget https://sourceforge.net/projects/wxmedit/files/3.1/wxmedit_3.1-1_amd64-wx3-icu55.deb/download
-	$PKGINSTALL download
-	apt-get -f install
+	wget -q https://sourceforge.net/projects/wxmedit/files/3.1/wxmedit_3.1-1_amd64-wx3-icu55.deb/download
+	$PKGINSTALL download || true
+	apt-get -f -y install
 	cd -
 fi
 
