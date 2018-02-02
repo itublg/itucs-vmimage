@@ -10,7 +10,7 @@ Using VirtualBox and Vagrant
 
 This is the simplest and recommended method. It will work on all major
 operating systems and prepare a virtual Linux installation that contains
-all the necessary software. [#gitbash_]
+all the necessary software. [#gitbash]_
 
 #. Install VirtualBox for your operating system: https://www.virtualbox.org/
 #. Install Vagrant for your operating system. Be careful to choose a version
