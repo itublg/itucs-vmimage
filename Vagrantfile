@@ -14,6 +14,9 @@ Vagrant.configure("2") do |config|
     end
 
     config.vm.provision "shell",
+        inline: "echo ubuntu:itucs | sudo chpasswd"
+
+    config.vm.provision "shell",
         inline: "apt-get update -y && apt-get upgrade -y"
 
     config.vm.provision :shell do |shell|

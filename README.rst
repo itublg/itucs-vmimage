@@ -20,13 +20,12 @@ all the necessary software. [#gitbash]_
 #. Change into the directory "itucs-vmimage-master".
 #. Run the command "vagrant up".
 #. Log in to the virtual machine using the command "vagrant ssh".
-#. Change the password for the "ubuntu" user: "sudo passwd ubuntu".
 #. Reboot the machine: "sudo reboot"
 
 To use the virtual machine, either start it from the VirtualBox window
-or using the "vagrant up" command. Similarly, you can shut down
-the virtual machine using the VirtualBox application or the command
-"vagrant halt".
+or using the "vagrant up" command. Log in to the "ubuntu" user with the
+password "itucs". Similarly, you can shut down the virtual machine
+using the VirtualBox application or the command "vagrant halt".
 
 Using an Ubuntu-based distribution
 ----------------------------------
