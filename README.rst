@@ -53,8 +53,8 @@ After the installation, follow these steps:
    https://github.com/uyar/itucs-vmimage/archive/master.zip
 #. Change into the directory "itucs-vmimage-master".
 #. Run the command: "sudo sh install_base.sh"
-#. Run the command: "sudo sh install_XXXXXX.sh" where XXXXXX is the code
-   of the course you want (in lowercase).
+#. Run the command: "sudo sh install_blgNNN.sh" where NNN is
+   numeric part of the course code.
 
 Using other systems
 -------------------
