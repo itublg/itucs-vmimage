@@ -5,7 +5,7 @@ If you want to use your own computer for following the material and
 doing the assignments in some of the courses (listed below) of the
 Computer Engineering Department of the Istanbul Technical University,
 you will need to set up an environment that contains the needed
-software packages. Your options are outlined below.
+software packages. This document outlines your options.
 
 The currently supported courses are:
 
