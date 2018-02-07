@@ -1,16 +1,25 @@
-Installation Instructions (BLG102)
-==================================
+Installation Instructions
+=========================
 
-If you want to use your own computer for following the course and
-doing the assignments, you will need to set up the environment required
-for this course. Your options are outlined below.
+If you want to use your own computer for following the material and
+doing the assignments in some of the courses (listed below) of the
+Computer Engineering Department of the Istanbul Technical University,
+you will need to set up an environment that contains the needed
+software packages. Your options are outlined below.
+
+The currently supported courses are:
+
+- BLG101: Introduction to Information Systems
+- BLG102: Introduction to Scientific and Engineering Computation (C)
+- BLG413: System Programming
+- BLG458: Functional Programming
 
 Using VirtualBox and Vagrant
 ----------------------------
 
 This is the simplest and recommended method. It will work on all major
 operating systems and prepare a virtual Linux installation that contains
-all the necessary software. [#gitbash]_
+all the necessary software for all of these courses. [#gitbash]_
 
 #. Install VirtualBox for your operating system: https://www.virtualbox.org/
 #. Install Vagrant for your operating system. Be careful to choose a version
@@ -18,14 +27,17 @@ all the necessary software. [#gitbash]_
 #. Download and unzip the file
    https://github.com/uyar/itucs-vmimage/archive/master.zip
 #. Change into the directory "itucs-vmimage-master".
-#. Run the command "vagrant up".
-#. Log in to the virtual machine using the command "vagrant ssh".
-#. Reboot the machine: "sudo reboot"
+#. Run the command "vagrant up". *Careful: The first time this command
+   is run, it will download a very large amount of data from the Internet.*
+#. If you get no errors, run the command "vagrant halt" to shut down
+   the machine.
 
 To use the virtual machine, either start it from the VirtualBox window
-or using the "vagrant up" command. Log in to the "ubuntu" user with the
-password "itucs". Similarly, you can shut down the virtual machine
-using the VirtualBox application or the command "vagrant halt".
+or using the "vagrant up" command. To see a machine that was started using
+"vagrant up", click the "Show" button in the VirtualBox window.
+
+You can log in to the machine by choosing the "ubuntu" user and typing
+the password "itucs".
 
 Using an Ubuntu-based distribution
 ----------------------------------
@@ -33,39 +45,81 @@ Using an Ubuntu-based distribution
 You can also choose to install any Ubuntu-based Linux distribution and
 install the necessary packages on top of it. It is still recommended
 that you install the distribution under VirtualBox unless you’re absolutely
-certain that you know what you’re doing. After the installation,
-follow these steps:
+certain that you know what you’re doing. [#pendrive]_
+
+After the installation, follow these steps:
 
 #. Download and unzip the file
    https://github.com/uyar/itucs-vmimage/archive/master.zip
 #. Change into the directory "itucs-vmimage-master".
-#. Although this is not required, it’s recommended that you run the commands
-   "sudo sh install_base.sh" and "sudo sh install_blg101.sh" to install
-   some basic tools that might be useful.
-#. Run the command: "sudo sh install_blg102.sh".
+#. Run the command: "sudo sh install_base.sh"
+#. Run the command: "sudo sh install_XXXXXX.sh" where XXXXXX is the code
+   of the course you want (in lowercase).
 
-Using any other Unix installation
----------------------------------
+Using other systems
+-------------------
 
-Find and install the following packages for your system:
+Install the following packages for your system:
 
-- GCC C++ compiler. On Linux systems this package is usually called
-  "g++" or "gcc-c++".
-- make
-- cppcheck: http://cppcheck.sourceforge.net/
-- Artistic Style (astyle): http://astyle.sourceforge.net/
+BLG101
 
-This method is not fully supported by our staff. If you run into any problems,
-we will only try to give you some guidance about how you can solve it.
+  - Geany: https://www.geany.org/
 
-Using any other system
-----------------------
+    Package name on Ubuntu: "geany"
 
-Sorry, you are completely on your own here. Our staff doesn’t have
-the resources to support other methods in any way.
+  - LibreOffice: https://www.libreoffice.org/
+
+    Package name on Ubuntu: "libreoffice"
+
+  - Gimp: https://www.gimp.org/
+
+    Package name on Ubuntu: "gimp"
+
+  - Inkscape: https://inkscape.org/
+
+    Package name on Ubuntu: "inkscape"
+
+BLG102
+
+  - GCC C++ compiler: http://gcc.gnu.org/
+
+    Package name on Ubuntu: "g++"
+
+  - make: https://www.gnu.org/software/make/
+
+    Package name on Ubuntu: "make"
+
+  - cppcheck: http://cppcheck.sourceforge.net/
+
+    Package name on Ubuntu: "cppcheck"
+
+  - Artistic Style: http://astyle.sourceforge.net/
+
+    Package name on Ubuntu: "astyle"
+
+BLG413
+
+  - nasm: http://www.nasm.us/
+
+    Package name on Ubuntu: "nasm"
+
+  - libfuse: https://github.com/libfuse/libfuse
+
+    Package name on Ubuntu: "libfuse-dev"
+
+BLG458
+
+  - Glasgow Haskell Compiler (ghc): https://www.haskell.org/ghc/
+
+    Package name on Ubuntu: "haskell-platform"
 
 .. [#gitbash]
 
    If you are using Windows, it is recommended that you install
    the Git version control system and use "Git Bash" instead of the standard
    Windows command prompt: https://git-scm.com/
+
+.. [#pendrive]
+
+   Another safe option would be to install to a flash drive:
+   https://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/
