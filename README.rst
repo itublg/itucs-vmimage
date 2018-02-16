@@ -101,6 +101,10 @@ Install the following packages for your system:
 
   Package name on Ubuntu: "astyle"
 
+- clang-format: http://clang.llvm.org/docs/ClangFormat.html
+
+  Package name on Ubuntu: "clang-format"
+
 **BLG312**
 
 This course doesn't need any special software other than
