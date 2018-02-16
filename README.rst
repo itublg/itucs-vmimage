@@ -64,39 +64,39 @@ Install the following packages for your system:
 
 BLG101
 
-  - Geany: https://www.geany.org/
+- Geany: https://www.geany.org/
 
-    Package name on Ubuntu: "geany"
+  Package name on Ubuntu: "geany"
 
-  - LibreOffice: https://www.libreoffice.org/
+- LibreOffice: https://www.libreoffice.org/
 
-    Package name on Ubuntu: "libreoffice"
+  Package name on Ubuntu: "libreoffice"
 
-  - Gimp: https://www.gimp.org/
+- Gimp: https://www.gimp.org/
 
-    Package name on Ubuntu: "gimp"
+  Package name on Ubuntu: "gimp"
 
-  - Inkscape: https://inkscape.org/
+- Inkscape: https://inkscape.org/
 
-    Package name on Ubuntu: "inkscape"
+  Package name on Ubuntu: "inkscape"
 
 BLG102
 
-  - GCC C++ compiler: http://gcc.gnu.org/
+- GCC C++ compiler: http://gcc.gnu.org/
 
-    Package name on Ubuntu: "g++"
+  Package name on Ubuntu: "g++"
 
-  - make: https://www.gnu.org/software/make/
+- make: https://www.gnu.org/software/make/
 
-    Package name on Ubuntu: "make"
+  Package name on Ubuntu: "make"
 
-  - cppcheck: http://cppcheck.sourceforge.net/
+- cppcheck: http://cppcheck.sourceforge.net/
 
-    Package name on Ubuntu: "cppcheck"
+  Package name on Ubuntu: "cppcheck"
 
-  - Artistic Style: http://astyle.sourceforge.net/
+- Artistic Style: http://astyle.sourceforge.net/
 
-    Package name on Ubuntu: "astyle"
+  Package name on Ubuntu: "astyle"
 
 BLG312
 
@@ -105,19 +105,19 @@ the standard tools installed for BLG102.
 
 BLG413
 
-  - nasm: http://www.nasm.us/
+- nasm: http://www.nasm.us/
 
-    Package name on Ubuntu: "nasm"
+  Package name on Ubuntu: "nasm"
 
-  - libfuse: https://github.com/libfuse/libfuse
+- libfuse: https://github.com/libfuse/libfuse
 
-    Package name on Ubuntu: "libfuse-dev"
+  Package name on Ubuntu: "libfuse-dev"
 
 BLG458
 
-  - Glasgow Haskell Compiler (ghc): https://www.haskell.org/ghc/
+- Glasgow Haskell Compiler (ghc): https://www.haskell.org/ghc/
 
-    Package name on Ubuntu: "haskell-platform"
+  Package name on Ubuntu: "haskell-platform"
 
 .. [#gitbash]
 
