@@ -101,7 +101,7 @@ Install the following packages for your system:
 
   Package name on Ubuntu: "astyle"
 
-- clang-format: http://clang.llvm.org/docs/ClangFormat.html
+- ClangFormat: http://clang.llvm.org/docs/ClangFormat.html
 
   Package name on Ubuntu: "clang-format"
 
