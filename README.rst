@@ -38,7 +38,10 @@ or using the "vagrant up" command. To see a machine that was started using
 "vagrant up", click the "Show" button in the VirtualBox window.
 
 You can log in to the machine by choosing the "ubuntu" user and typing
-the password "itucs".
+the password "itucs". If that doesn't work for some reason, try
+logging in using the "vagrant ssh" command and changing the password::
+
+  sudo passwd ubuntu
 
 Using an Ubuntu-based distribution
 ----------------------------------
@@ -62,7 +65,7 @@ Using other systems
 
 Install the following packages for your system:
 
-BLG101
+**BLG101**
 
 - Geany: https://www.geany.org/
 
@@ -80,7 +83,7 @@ BLG101
 
   Package name on Ubuntu: "inkscape"
 
-BLG102
+**BLG102**
 
 - GCC C++ compiler: http://gcc.gnu.org/
 
@@ -98,12 +101,12 @@ BLG102
 
   Package name on Ubuntu: "astyle"
 
-BLG312
+**BLG312**
 
 This course doesn't need any special software other than
 the standard tools installed for BLG102.
 
-BLG413
+**BLG413**
 
 - nasm: http://www.nasm.us/
 
@@ -113,7 +116,7 @@ BLG413
 
   Package name on Ubuntu: "libfuse-dev"
 
-BLG458
+**BLG458**
 
 - Glasgow Haskell Compiler (ghc): https://www.haskell.org/ghc/
 
