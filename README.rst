@@ -11,6 +11,7 @@ The currently supported courses are:
 
 - BLG101: Introduction to Information Systems
 - BLG102: Introduction to Scientific and Engineering Computation (C)
+- BLG312: Computer Operating Systems
 - BLG413: System Programming
 - BLG458: Functional Programming
 
@@ -96,6 +97,11 @@ BLG102
   - Artistic Style: http://astyle.sourceforge.net/
 
     Package name on Ubuntu: "astyle"
+
+BLG312
+
+This course doesn't need any special software other than
+the standard tools installed for BLG102.
 
 BLG413
 
