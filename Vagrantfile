@@ -36,10 +36,6 @@ Vagrant.configure("2") do |config|
     end
 
     config.vm.provision :shell do |shell|
-        shell.path = "install_calico.sh"
-    end
-
-    config.vm.provision :shell do |shell|
         shell.path = "install_blg413.sh"
     end
 
