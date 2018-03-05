@@ -17,7 +17,7 @@ Vagrant.configure("2") do |config|
         inline: "echo ubuntu:itucs | sudo chpasswd"
 
     config.vm.provision "shell",
-        inline: "apt-get update -y && apt-get upgrade -y"
+        inline: "apt-get update -y"
 
     config.vm.provision :shell do |shell|
         shell.path = "install_lubuntu.sh"
