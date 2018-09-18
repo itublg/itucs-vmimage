@@ -3,7 +3,7 @@
 CHECK='test -f'
 INSTALL='apt-get install -y --no-install-recommends'
 
-PACKAGES='g++ cppcheck astyle clang-format make gdb valgrind'
+PACKAGES='g++ cppcheck clang-format make gdb valgrind nemiver'
 
 for p in $PACKAGES; do
 	$CHECK /usr/bin/$p || $INSTALL $p
