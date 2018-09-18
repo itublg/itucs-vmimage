@@ -15,27 +15,47 @@ The currently supported courses are:
 - BLG413: System Programming
 - BLG458: Functional Programming
 
+To carry out the instructions below, you will need a "terminal emulator"
+program (also called a "command prompt"). All platforms provide such a program.
+On the Linux system described below, it's called "Xfce Terminal". On Windows,
+you can use the programs "cmd" or "PowerShell"; or you can install the `Git`_
+version control system and use "Git Bash" (recommended).
+
 Using VirtualBox and Vagrant
 ----------------------------
 
 This is the simplest and recommended method. It will work on all major
 operating systems and prepare a virtual Linux installation that contains
-all the necessary software for all of these courses. [#gitbash]_
+all the necessary software for all of these courses.
 
-#. Install VirtualBox for your operating system: https://www.virtualbox.org/
-#. Install Vagrant for your operating system. Be careful to choose a version
-   compatible with your VirtualBox version: https://www.vagrantup.com/
-#. Download and unzip the file
-   https://github.com/uyar/itucs-vmimage/archive/master.zip
-#. Change into the directory "itucs-vmimage-master".
-#. Run the command "vagrant up". *Careful: The first time this command
-   is run, it will download a very large amount of data from the Internet.*
-#. If you get no errors, run the command "vagrant halt" to shut down
-   the machine.
+#. Install `VirtualBox`_ for your operating system.
 
-To use the virtual machine, either start it from the VirtualBox window
-or using the "vagrant up" command. To see a machine that was started using
-"vagrant up", click the "Show" button in the VirtualBox window.
+#. Install `Vagrant`_ for your operating system. Be careful to choose a version
+   that is compatible with your VirtualBox version.
+
+#. Download and unzip the file:
+   https://github.com/itublg/itucs-vmimage/archive/master.zip
+
+#. Change into the directory: ``itucs-vmimage-master``
+
+#. Run the command::
+
+     vagrant up
+
+   *Careful: The first time you run this command, it will download a very large
+   amount of data from the Internet.*
+
+#. If you get no errors, run the following command to shut down the machine::
+
+     vagrant halt
+
+As a result, you will obtain a virtual machine named "itucs" under VirtualBox.
+To use it, either start it from the VirtualBox window or run the command::
+
+   vagrant up
+
+In the VirtualBox window, if the machine is listed as running but its window
+is not visible, click the "Show" button.
 
 Using an Ubuntu-based distribution
 ----------------------------------
@@ -47,57 +67,45 @@ certain that you know what you’re doing. [#pendrive]_
 
 After the installation, follow these steps:
 
-#. Download and unzip the file
+#. Download and unzip the file:
    https://github.com/uyar/itucs-vmimage/archive/master.zip
-#. Change into the directory "itucs-vmimage-master".
-#. Run the command: "sudo sh install_base.sh"
-#. Run the command: "sudo sh install_blgNNN.sh" where NNN is
-   numeric part of the course code.
+
+#. Change into the directory: ``itucs-vmimage-master``
+
+#. Run the command::
+
+      sudo sh install_base.sh
+
+#. Run the command::
+
+      sudo sh install_blgNNN.sh
+
+   where ``NNN`` is numeric part of the course code.
 
 Using other systems
 -------------------
 
-Install the following packages for your system:
+Install the following packages for your system (for Ubuntu, the names
+of the packages are given in parentheses):
+
+**All courses**
+
+- `Git`_ (``git``)
 
 **BLG101**
 
-- Geany: https://www.geany.org/
-
-  Package name on Ubuntu: "geany"
-
-- LibreOffice: https://www.libreoffice.org/
-
-  Package name on Ubuntu: "libreoffice"
-
-- Gimp: https://www.gimp.org/
-
-  Package name on Ubuntu: "gimp"
-
-- Inkscape: https://inkscape.org/
-
-  Package name on Ubuntu: "inkscape"
+- `Geany`_ (``geany``)
+- `LibreOffice`_ (``libreoffice``)
+- `Gimp`_ (``gimp``)
+- `Inkscape`_ (``inkscape``)
+- `Python`_ (``python3``)
 
 **BLG102**
 
-- GCC C++ compiler: http://gcc.gnu.org/
-
-  Package name on Ubuntu: "g++"
-
-- make: https://www.gnu.org/software/make/
-
-  Package name on Ubuntu: "make"
-
-- cppcheck: http://cppcheck.sourceforge.net/
-
-  Package name on Ubuntu: "cppcheck"
-
-- Artistic Style: http://astyle.sourceforge.net/
-
-  Package name on Ubuntu: "astyle"
-
-- ClangFormat: http://clang.llvm.org/docs/ClangFormat.html
-
-  Package name on Ubuntu: "clang-format"
+- `GCC C++ compiler`_ (``g++``)
+- `GNU make`_ (``make``)
+- `cppcheck`_ (``cppcheck``)
+- `ClangFormat`_ (``clang-format``)
 
 **BLG312**
 
@@ -106,27 +114,30 @@ the standard tools installed for BLG102.
 
 **BLG413**
 
-- nasm: http://www.nasm.us/
-
-  Package name on Ubuntu: "nasm"
-
-- libfuse: https://github.com/libfuse/libfuse
-
-  Package name on Ubuntu: "libfuse-dev"
+- `nasm`_ (``nasm``)
+- `libfuse`_ (``libfuse-dev``)
 
 **BLG458**
 
-- Glasgow Haskell Compiler (ghc): https://www.haskell.org/ghc/
-
-  Package name on Ubuntu: "haskell-platform"
-
-.. [#gitbash]
-
-   If you are using Windows, it is recommended that you install
-   the Git version control system and use "Git Bash" instead of the standard
-   Windows command prompt: https://git-scm.com/
+- `Glasgow Haskell Compiler`_ (``haskell-platform``)
 
 .. [#pendrive]
 
    Another safe option would be to install to a flash drive:
    https://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/
+
+.. _ClangFormat: http://clang.llvm.org/docs/ClangFormat.html
+.. _cppcheck: http://cppcheck.sourceforge.net/
+.. _GCC C++ compiler: http://gcc.gnu.org/
+.. _Geany: https://www.geany.org/
+.. _Gimp: https://www.gimp.org/
+.. _Git: https://git-scm.com/
+.. _Glasgow Haskell Compiler: https://www.haskell.org/ghc/
+.. _GNU make: https://www.gnu.org/software/make/
+.. _Inkscape: https://inkscape.org/
+.. _libfuse: https://github.com/libfuse/libfuse
+.. _LibreOffice: https://www.libreoffice.org/
+.. _nasm: http://www.nasm.us/
+.. _Python: https://www.python.org/
+.. _Vagrant: https://www.vagrantup.com/
+.. _VirtualBox: https://www.virtualbox.org/
