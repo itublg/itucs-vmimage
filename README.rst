@@ -127,6 +127,9 @@ In addition to the packages listed under BLG102, you also need:
 Tips
 ----
 
+- Read the `Connecting to eduroam <eduroam.rst>`_ document for connecting
+  your computer to the "eduroam" on campus.
+
 - Check out the `Using the ITU cloud storage service <kovan.rst>`_ document
   for accessing your files from various devices. You will need this especially
   if you are using the memory stick installation.
