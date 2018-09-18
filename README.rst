@@ -64,7 +64,7 @@ You can also choose to install any Ubuntu-based Linux distribution and
 install the necessary packages on top of it. It is still recommended
 that you install the distribution under VirtualBox unless you’re absolutely
 certain that you know what you’re doing. Another safe option would be
-to `install to a memory stick <memory-stick>`_.
+to `install to a memory stick <memory-stick.rst>`_.
 
 After the installation, follow these steps:
 
@@ -140,5 +140,3 @@ In addition to the packages listed under BLG102, you also need:
 .. _Python: https://www.python.org/
 .. _Vagrant: https://www.vagrantup.com/
 .. _VirtualBox: https://www.virtualbox.org/
-
-.. _memory-stick: https://github.com/itublg/itucs-vmimage/blob/master/memory-stick.rst
