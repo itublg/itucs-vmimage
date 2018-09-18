@@ -127,6 +127,13 @@ In addition to the packages listed under BLG102, you also need:
 Tips
 ----
 
+- To have Turkish (or other non-default) keyboard layout under Linux Mint XFCE,
+  right click on the bottom panel and choose
+  "Panel -> Add New Items... -> Keyboard Layouts". Right click on the added
+  item (a flag) and choose "Keyboard settings". In the "Layout" tab, untick
+  the "Use system defaults" box and under "Keyboard layout", add "Turkish"
+  (the main item, not any of the subitems).
+
 - Read the `Connecting to eduroam <eduroam.rst>`_ document for connecting
   your computer to the "eduroam" on campus.
 
