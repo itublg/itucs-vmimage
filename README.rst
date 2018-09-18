@@ -63,7 +63,8 @@ Using an Ubuntu-based distribution
 You can also choose to install any Ubuntu-based Linux distribution and
 install the necessary packages on top of it. It is still recommended
 that you install the distribution under VirtualBox unless you’re absolutely
-certain that you know what you’re doing. [#pendrive]_
+certain that you know what you’re doing. Another safe option would be
+to `install to a memory stick <memory-stick>`_.
 
 After the installation, follow these steps:
 
@@ -114,6 +115,8 @@ the standard tools installed for BLG102.
 
 **BLG413**
 
+In addition to the packages listed under BLG102, you also need:
+
 - `nasm`_ (``nasm``)
 - `libfuse`_ (``libfuse-dev``)
 
@@ -121,10 +124,6 @@ the standard tools installed for BLG102.
 
 - `Glasgow Haskell Compiler`_ (``haskell-platform``)
 
-.. [#pendrive]
-
-   Another safe option would be to install to a flash drive:
-   https://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/
 
 .. _ClangFormat: http://clang.llvm.org/docs/ClangFormat.html
 .. _cppcheck: http://cppcheck.sourceforge.net/
@@ -141,3 +140,5 @@ the standard tools installed for BLG102.
 .. _Python: https://www.python.org/
 .. _Vagrant: https://www.vagrantup.com/
 .. _VirtualBox: https://www.virtualbox.org/
+
+.. _memory-stick: https://github.com/itublg/itucs-vmimage/blob/master/memory-stick.rst
