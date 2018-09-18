@@ -68,7 +68,7 @@ certain that you know what you’re doing. [#pendrive]_
 After the installation, follow these steps:
 
 #. Download and unzip the file:
-   https://github.com/uyar/itucs-vmimage/archive/master.zip
+   https://github.com/itublg/itucs-vmimage/archive/master.zip
 
 #. Change into the directory: ``itucs-vmimage-master``
 
