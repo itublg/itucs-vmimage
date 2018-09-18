@@ -14,12 +14,8 @@ $CHECK /usr/bin/lowriter || $INSTALL libreoffice-writer
 $CHECK /usr/bin/localc || $INSTALL libreoffice-calc
 $CHECK /usr/bin/display || $INSTALL xfonts-75dpi imagemagick
 
-if ! $CHECK /usr/bin/wxmedit; then
-	cd /dev/shm
-	wget -q https://sourceforge.net/projects/wxmedit/files/3.1/wxmedit_3.1-1_amd64-wx3-icu55.deb/download
-	$PKGINSTALL download || true
-	apt-get -f -y install
-	cd -
+if ! $CHECK /usr/bin/madedit; then
+	wget -q https://sourceforge.net/projects/madedit/files/MadEdit/MadEdit-0.2.9/madedit_0.2.9-1_amd64.deb/download -O /dev/shm/madedit.deb && $INSTALL /dev/shm/madedit.deb || rm -f /dev/shm/madedit.deb
 fi
 
 PY3_CHECK='python3 -c '
