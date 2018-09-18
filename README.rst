@@ -135,7 +135,7 @@ Tips
   (the main item, not any of the subitems).
 
 - Read the `Connecting to eduroam <eduroam.rst>`_ document for connecting
-  your computer to the "eduroam" on campus.
+  your computer to the "eduroam" network on campus.
 
 - Check out the `Using the ITU cloud storage service <kovan.rst>`_ document
   for accessing your files from various devices. You will need this especially
