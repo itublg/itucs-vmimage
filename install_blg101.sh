@@ -2,7 +2,6 @@
 
 CHECK='test -f'
 INSTALL='apt-get install -y --no-install-recommends'
-PKGINSTALL='dpkg -i --skip-same-version'
 
 PACKAGES='elinks pcmanfm gucharmap galculator geany gimp inkscape'
 
