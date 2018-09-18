@@ -37,12 +37,6 @@ To use the virtual machine, either start it from the VirtualBox window
 or using the "vagrant up" command. To see a machine that was started using
 "vagrant up", click the "Show" button in the VirtualBox window.
 
-You can log in to the machine by choosing the "ubuntu" user and typing
-the password "itucs". If that doesn't work for some reason, try
-logging in using the "vagrant ssh" command and changing the password::
-
-  sudo passwd ubuntu
-
 Using an Ubuntu-based distribution
 ----------------------------------
 
