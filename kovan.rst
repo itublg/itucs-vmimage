@@ -11,7 +11,7 @@ category. Other Ubuntu based installations can obtain it by installing
 the package ``owncloud-client``. The first time you run it, you will need
 to supply the following information:
 
-- Server Address: ``https://kovan.itu.edu.tr/``
+- Server Address: ``https://kovan.itu.edu.tr``
 - Username: *your ITU user name*
 - Password: *your ITU password*
 
