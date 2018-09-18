@@ -1,15 +1,14 @@
 #!/bin/bash
 
-CHECK='test -f'
+CHECK='dpkg-query --show'
 INSTALL='apt-get install -y --no-install-recommends'
-REMOVE='apt-get purge -y'
-CLEAN='apt-get autoremove -y'
+REMOVE='apt-get purge --auto-remove -y'
 GREP='grep -q'
 
-$CHECK /usr/bin/lxsession || $INSTALL lubuntu-desktop
+$CHECK lubuntu-desktop || $INSTALL lubuntu-desktop
 
-$CHECK /usr/bin/abiword && $REMOVE abiword* && $CLEAN || true
-$CHECK /usr/bin/gnumeric && $REMOVE gnumeric* && $CLEAN || true
+$CHECK abiword && $REMOVE abiword* || true
+$CHECK gnumeric && $REMOVE gnumeric* || true
 
 DM_CONF_DIR=/etc/lightdm
 if ! $GREP -r "autologin-user=" $DM_CONF_DIR; then

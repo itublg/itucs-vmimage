@@ -1,12 +1,10 @@
 #!/bin/bash
 
-CHECK='test -f'
+CHECK='dpkg-query --show'
 INSTALL='apt-get install -y --no-install-recommends'
 
-PACKAGES='vim patch git firefox'
+PACKAGES='vim patch git firefox owncloud-client'
 
 for p in $PACKAGES; do
-	$CHECK /usr/bin/$p || $INSTALL $p
+	$CHECK $p || $INSTALL $p
 done
-
-$CHECK /usr/bin/owncloud || $INSTALL owncloud-client

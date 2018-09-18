@@ -1,12 +1,10 @@
 #!/bin/bash
 
-CHECK='test -f'
+CHECK='dpkg-query --show'
 INSTALL='apt-get install -y --no-install-recommends'
 
-PACKAGES='ghc'
+PACKAGES='ghc libghc-quickcheck2-dev'
 
 for p in $PACKAGES; do
-	$CHECK /usr/bin/$p || $INSTALL $p
+	$CHECK $p || $INSTALL $p
 done
-
-$CHECK /usr/share/lintian/overrides/libghc-quickcheck2-dev || $INSTALL libghc-quickcheck2-dev

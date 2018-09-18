@@ -1,20 +1,18 @@
 #!/bin/bash
 
-CHECK='test -f'
+CHECK='dpkg-query --show'
 INSTALL='apt-get install -y --no-install-recommends'
 
-PACKAGES='g++ cppcheck clang-format make gdb valgrind nemiver'
+PACKAGES='g++ manpages-dev cppcheck clang-format make gdb valgrind nemiver'
 
 for p in $PACKAGES; do
-	$CHECK /usr/bin/$p || $INSTALL $p
+	$CHECK $p || $INSTALL $p
 done
-
-$CHECK /usr/share/man/man3/printf.3.gz || $INSTALL manpages-dev
 
 PACKAGES='libyaml-dev fakechroot python3 python3-dev python3-setuptools python3-pip'
 
 for p in $PACKAGES; do
-	$CHECK /usr/bin/$p || $INSTALL $p
+	$CHECK $p || $INSTALL $p
 done
 
 python3 -m pip install -U calico

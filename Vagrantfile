@@ -10,9 +10,9 @@ Vagrant.configure("2") do |config|
         vb.customize ["modifyvm", :id, "--name", "itucs" ]
     end
 
-    # config.vm.provision :shell do |shell|
-    #     shell.path = "fix_locale.sh"
-    # end
+    config.vm.provision :shell do |shell|
+        shell.path = "fix_locale.sh"
+    end
 
     config.vm.provision "shell",
         inline: "apt-get update -y"
