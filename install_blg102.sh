@@ -17,5 +17,4 @@ for p in $PACKAGES; do
 	$CHECK /usr/bin/$p || $INSTALL $p
 done
 
-pip3 install -U pip
-pip3 install -U calico
+python3 -m pip install -U calico
