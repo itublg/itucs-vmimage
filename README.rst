@@ -124,6 +124,13 @@ In addition to the packages listed under BLG102, you also need:
 
 - `Glasgow Haskell Compiler`_ (``haskell-platform``)
 
+Tips
+----
+
+- Check out the `Using the ITU cloud storage service <kovan.rst>`_ document
+  for accessing your files from various devices. You will need this especially
+  if you are using the memory stick installation.
+
 
 .. _ClangFormat: http://clang.llvm.org/docs/ClangFormat.html
 .. _cppcheck: http://cppcheck.sourceforge.net/
