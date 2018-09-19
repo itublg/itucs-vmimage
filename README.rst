@@ -96,10 +96,12 @@ of the packages are given in parentheses):
 **BLG101**
 
 - `Geany`_ (``geany``)
+- `wxMEdit`_ (``wxmedit``)
 - `LibreOffice`_ (``libreoffice``)
 - `Gimp`_ (``gimp``)
 - `Inkscape`_ (``inkscape``)
 - `Python`_ (``python3``)
+- `Bottle`_ (``python3-bottle``)
 
 **BLG102**
 
@@ -142,6 +144,7 @@ Tips
   if you are using the memory stick installation.
 
 
+.. _Bottle: https://bottlepy.org/
 .. _ClangFormat: http://clang.llvm.org/docs/ClangFormat.html
 .. _cppcheck: http://cppcheck.sourceforge.net/
 .. _GCC C++ compiler: http://gcc.gnu.org/
@@ -157,3 +160,4 @@ Tips
 .. _Python: https://www.python.org/
 .. _Vagrant: https://www.vagrantup.com/
 .. _VirtualBox: https://www.virtualbox.org/
+.. _wxMEdit: https://wxmedit.github.io/
