@@ -134,8 +134,12 @@ Tips
   the "Use system defaults" box and under "Keyboard layout", add "Turkish"
   (the main item, not any of the subitems).
 
-- Read the `Connecting to eduroam <eduroam.rst>`_ document for connecting
-  your computer to the "eduroam" network on campus.
+- To connect to the wi-fi network on campus using Linux Mint XFCE, 
+  open up the network settings tool, choose the "eduroam" network,
+  and under "wi-fi security", choose "Protected EAP (PEAP)"
+  as the authentication option. Enter your ITU e-mail address as your
+  username, and enter your password. Also make sure that the box labeled
+  "No CA certificate is required" is checked.
 
 - Check out the `Using the ITU cloud storage service <kovan.rst>`_ document
   for accessing your files from various devices. You will need this especially
