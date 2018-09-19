@@ -29,8 +29,7 @@ Follow these instructions carefully:
 
 	Step 3 – Choose from the drop-down list the USB memory stick you inserted.
 
-	Step 4 – Set the persistent file size to a small number to some value
-	around 2048MB.
+	Step 4 – Set the persistent file size to some value around 2048MB.
 
 	Step 5 – Click Create. This process will take some time to complete.
 
