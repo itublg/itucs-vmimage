@@ -47,6 +47,8 @@ Follow these instructions carefully:
    the command::
 
      sudo apt update
+     
+#. Install the software recommended for your course by following the instructions under "Using an Ubuntu-based distribution" here: https://github.com/itublg/itucs-vmimage/blob/master/README.rst#user-content-using-an-ubuntu-based-distribution 
 
 Remember to shut down the system properly when finished to ensure changes
 you make are saved.
