@@ -98,7 +98,7 @@ of the packages are given in parentheses):
 **BLG101**
 
 - `Geany`_ (``geany``)
-- `wxMEdit`_ (``wxmedit``)
+- `wxMEdit`_ (not available on Ubuntu repositories)
 - `LibreOffice`_ (``libreoffice``)
 - `Gimp`_ (``gimp``)
 - `Inkscape`_ (``inkscape``)
