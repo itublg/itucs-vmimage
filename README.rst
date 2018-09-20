@@ -71,7 +71,9 @@ After the installation, follow these steps:
 #. Download and unzip the file:
    https://github.com/itublg/itucs-vmimage/archive/master.zip
 
-#. Change into the directory: ``itucs-vmimage-master``
+#. From your command prompt (see the note about command prompts in the
+   "Installation Instructions" section above), change into the directory
+   that you just created when you unzipped the file: ``itucs-vmimage-master``
 
 #. Run the command::
 
