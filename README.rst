@@ -98,7 +98,7 @@ of the packages are given in parentheses):
 **BLG101**
 
 - `Geany`_ (``geany``)
-- `wxMEdit`_ (not available on Ubuntu repositories)
+- `madedit-mod`_ (not available on Ubuntu repositories)
 - `LibreOffice`_ (``libreoffice``)
 - `Gimp`_ (``gimp``)
 - `Inkscape`_ (``inkscape``)
@@ -166,4 +166,4 @@ Tips
 .. _Python: https://www.python.org/
 .. _Vagrant: https://www.vagrantup.com/
 .. _VirtualBox: https://www.virtualbox.org/
-.. _wxMEdit: https://wxmedit.github.io/
+.. _madedit-mod: https://sourceforge.net/projects/madedit-mod/

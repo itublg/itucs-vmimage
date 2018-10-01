@@ -9,7 +9,7 @@ for p in $PACKAGES; do
 	$CHECK $p || $INSTALL $p
 done
 
-$CHECK madedit || ( wget -q https://sourceforge.net/projects/madedit/files/MadEdit/MadEdit-0.2.9/madedit_0.2.9-1_amd64.deb/download -O /dev/shm/madedit.deb && $INSTALL /dev/shm/madedit.deb && rm -f /dev/shm/madedit.deb )
+$CHECK madedit-mod || ( wget -q https://sourceforge.net/projects/madedit-mod/files/0.4.14/madedit-mod_0.4.14-1_amd64_Ubuntu18.04.deb/download -O /dev/shm/madedit-mod.deb && $INSTALL /dev/shm/madedit-mod.deb && rm -f /dev/shm/madedit-mod.deb )
 
 PACKAGES='python3 python3-pip python3-bottle python3-tz'
 
