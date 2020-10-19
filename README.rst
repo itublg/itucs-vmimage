@@ -14,6 +14,7 @@ The currently supported courses are:
 - BLG312: Computer Operating Systems
 - BLG413: System Programming
 - BLG458: Functional Programming
+- BLG460: Secure Programming
 
 To carry out the instructions below, you will need a "terminal emulator"
 program (also called a "command prompt"). All platforms provide such a program.
@@ -30,6 +31,9 @@ all the necessary software for all of these courses.
 
 #. Install `VirtualBox`_ for your operating system.
 
+#. Install VM VirtualBox Extension Pack. It is hosted on::
+   https://www.virtualbox.org/wiki/Downloads
+
 #. Install `Vagrant`_ for your operating system. Be careful to choose a version
    that is compatible with your VirtualBox version.
 
@@ -37,20 +41,30 @@ all the necessary software for all of these courses.
    https://github.com/itublg/itucs-vmimage/archive/master.zip
 
 #. Change into the directory: ``itucs-vmimage-master``
+   Note that, you may use this directory as a shared folder.
+   So, choose an appropriate location that you don't need to delete afterwards.
 
-#. Run the command::
+#. For Windows OS, run the command::
 
-     vagrant up
+     vagrant up --provision & vagrant halt
 
+   For Unix-like OS, run the command::
+   
+     vagrant up --provision ; vagrant halt
+   
    *Careful: The first time you run this command, it will download a very large
-   amount of data from the Internet.*
+   amount of data from the Internet. It will take a considerable amount of time.
+   Be patient.*
 
-#. If you get no errors, run the following command to shut down the machine::
+   *Remark: You may see a virtual box window that reflects a login screen.
+   Normally, you don't need to login till the progress finishes.
+   This window will disappear after successful installation.*
 
-     vagrant halt
+#. If you get no errors, you will see "Successfully installed!" message on the terminal
 
-As a result, you will obtain a virtual machine named "itucs" under VirtualBox.
-To use it, either start it from the VirtualBox window or run the command::
+As a result, you will obtain a virtual machine named "ItuCompeng" under VirtualBox.
+To use it, either start it from the VirtualBox window or browse into this installation
+directory and run the command::
 
    vagrant up
 
@@ -62,8 +76,8 @@ Using an Ubuntu-based distribution
 
 You can also choose to install any Ubuntu-based Linux distribution and
 install the necessary packages on top of it. It is still recommended
-that you install the distribution under VirtualBox unless you’re absolutely
-certain that you know what you’re doing. Another safe option would be
+that you install the distribution under VirtualBox unless you're absolutely
+certain that you know what you're doing. Another safe option would be
 to `install to a memory stick <memory-stick.rst>`_.
 
 After the installation, follow these steps:
@@ -128,17 +142,28 @@ In addition to the packages listed under BLG102, you also need:
 
 - `Glasgow Haskell Compiler`_ (``haskell-platform``)
 
+**BLG460**
+
+In addition to BLG102, you need the following and some of their auxiallary packages
+
+- `Apache Server`_ (``apache2``)
+- `MariaDB`_ (``default-mysql-server``)
+- `PHP`_ (``php``)
+- `Splint`_ (``splint``)
+- `Terminator`_ (``terminator``)
+
 Tips
 ----
 
-- To have Turkish (or other non-default) keyboard layout under Linux Mint XFCE,
+- The keyboard layout is set to Turkish-Q by default.
+  To have other non-default keyboard layout under Debian,
   right click on the bottom panel and choose
   "Panel -> Add New Items... -> Keyboard Layouts". Right click on the added
   item (a flag) and choose "Keyboard settings". In the "Layout" tab, untick
-  the "Use system defaults" box and under "Keyboard layout", add "Turkish"
-  (the main item, not any of the subitems).
+  the "Use system defaults" box and under "Keyboard layout", add the desired 
+  language (the main item, not any of the subitems).
 
-- To connect to the wi-fi network on campus using Linux Mint XFCE, 
+- To connect to the wi-fi network on campus using Debian, 
   open up the network settings tool, choose the "eduroam" network,
   and under "wi-fi security", choose "Protected EAP (PEAP)"
   as the authentication option. Enter your ITU e-mail address as your
@@ -150,6 +175,7 @@ Tips
   if you are using the memory stick installation.
 
 
+.. _Apache Server: http://httpd.apache.org/
 .. _Bottle: https://bottlepy.org/
 .. _ClangFormat: http://clang.llvm.org/docs/ClangFormat.html
 .. _cppcheck: http://cppcheck.sourceforge.net/
@@ -162,8 +188,12 @@ Tips
 .. _Inkscape: https://inkscape.org/
 .. _libfuse: https://github.com/libfuse/libfuse
 .. _LibreOffice: https://www.libreoffice.org/
+.. _madedit-mod: https://sourceforge.net/projects/madedit-mod/
+.. _MariaDB: https://mariadb.org/
 .. _nasm: http://www.nasm.us/
+.. _PHP: https://www.php.net/
 .. _Python: https://www.python.org/
 .. _Vagrant: https://www.vagrantup.com/
 .. _VirtualBox: https://www.virtualbox.org/
-.. _madedit-mod: https://sourceforge.net/projects/madedit-mod/
+.. _Splint: http://splint.org/
+.. _Terminator: https://github.com/gnome-terminator/terminator
