@@ -53,5 +53,5 @@ Remember to shut down the system properly when finished to ensure changes
 you make are saved.
 
 
-.. _Linux Mint 19 XFCE: https://linuxmint.com/edition.php?id=283
+.. _Linux Mint 20 XFCE: https://linuxmint.com/edition.php?id=283
 .. _Universal USB Installer: http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/
