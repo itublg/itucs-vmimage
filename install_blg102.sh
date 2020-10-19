@@ -15,4 +15,4 @@ for p in $PACKAGES; do
 	$CHECK $p || $INSTALL $p
 done
 
-python3 -m pip install -U calico
+while [[ $(python3 -m pip list | grep -c "calico") == "0" ]]; do (python3 -m pip install --no-cache-dir calico); done
