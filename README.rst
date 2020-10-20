@@ -27,11 +27,25 @@ Using VirtualBox and Vagrant
 
 This is the simplest and recommended method. It will work on all major
 operating systems and prepare a virtual Linux installation that contains
-all the necessary software for all of these courses.
+all the necessary software for all of these courses.::
+
+  Warning for Windows users: There is a possibility that Windows 
+  virtualization environment may clash with virtualbox. Therefore;
+  it is recommended to disable the following Windows features from
+  Control Panel -> Programs and Features -> Turn Windows features on or off
+
+  - Containers
+  - Hyper-V
+  - Virtual Machine Platform
+  - Windows Hypervisor Platform
+  - Windows Sandbox
+  - Windows Subsystem for Linux
+
+  You might need to restart your computer, then continue as follows:
 
 #. Install `VirtualBox`_ for your operating system.
 
-#. Install VM VirtualBox Extension Pack. It is hosted on::
+#. Install VM VirtualBox Extension Pack. It is hosted on:
    https://www.virtualbox.org/wiki/Downloads
 
 #. Install `Vagrant`_ for your operating system. Be careful to choose a version
@@ -146,14 +160,14 @@ In addition to the packages listed under BLG102, you also need:
 
 In addition to BLG102, you need the following and some of their auxiallary packages
 
-- `Apache Server`_ (``apache2``)
-- `MariaDB`_ (``default-mysql-server``)
-- `PHP`_ (``php``)
 - `Splint`_ (``splint``)
 - `Terminator`_ (``terminator``)
 
 Tips
 ----
+
+- After a successful installation there exist only one user _vagrant_
+  and the password for this user is also _vagrant_. 
 
 - The keyboard layout is set to Turkish-Q by default.
   To have other non-default keyboard layout under Debian,
