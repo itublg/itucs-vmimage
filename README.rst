@@ -166,8 +166,8 @@ In addition to BLG102, you need the following and some of their auxiallary packa
 Tips
 ----
 
-- After a successful installation there exist only one user _vagrant_
-  and the password for this user is also _vagrant_. 
+- After a successful installation there exist only one user *vagrant*
+  and the password for this user is also *vagrant*. 
 
 - The keyboard layout is set to Turkish-Q by default.
   To have other non-default keyboard layout under Debian,
